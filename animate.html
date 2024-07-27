@@ -29,12 +29,21 @@
         padding: 30px 0px;
         text-align: center;
         color: #fff;
-        
+
 
     }
 
 </style>
-<body>
+<body ng-app="myApp">
+
+    <h2>Hide the Div : <input type="checkbox" ng-model="myCheck"> </h2>
+    <div ng-hide="myCheck">
+        <h2 class="site_name">www.quickstudy.com</h2>
+    </div>
+    <script type="text/javascript">
+        var app = angular.module('myApp',['ngAnimate'])
+
+    </script>
 
     
 </body>
